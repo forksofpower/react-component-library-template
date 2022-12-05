@@ -5,6 +5,17 @@ import scss from "rollup-plugin-scss";
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 
+// imports to replace
+const replacements = [
+  { original: 'lodash', replacement: 'lodash-es'}
+]
+
+const treeshake = {
+  treeshake: {
+    propertyReadSideEffects: false
+  }
+}
+
 export default [
   {
     input: "./src/index.ts",
@@ -12,11 +23,13 @@ export default [
       {
         file: "dist/index.js",
         format: "cjs",
+        treeshake,
       },
       {
         file: "dist/index.es.js",
         format: "es",
         exports: "named",
+        treeshake,
       },
     ],
     plugins: [
@@ -28,6 +41,10 @@ export default [
       babel({
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
+        plugins: [
+          require.resolve('babel-plugin-dev-expression'),
+          [require.resolve('babel-plugin-transform-rename-import'), { replacements }]
+      ]
       }),
       external(),
       resolve(),
