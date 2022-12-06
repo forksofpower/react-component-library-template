@@ -42,8 +42,8 @@ export default [
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
         plugins: [
-          require.resolve('babel-plugin-dev-expression'),
-          [require.resolve('babel-plugin-transform-rename-import'), { replacements }]
+          'babel-plugin-dev-expression',
+          ['babel-plugin-transform-rename-import', { replacements }]
       ]
       }),
       external(),
