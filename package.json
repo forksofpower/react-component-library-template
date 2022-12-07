@@ -1,7 +1,8 @@
 {
   "name": "react-ui-library",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "author": "forksofpower",
   "license": "MIT",
   "type": "module",
