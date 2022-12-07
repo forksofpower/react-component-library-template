@@ -10,26 +10,21 @@ const replacements = [
   { original: 'lodash', replacement: 'lodash-es'}
 ]
 
-const treeshake = {
-  treeshake: {
-    propertyReadSideEffects: false
-  }
-}
-
 export default [
   {
     input: "./src/index.ts",
+    treeshake: {
+      propertyReadSideEffects: false
+    },
     output: [
       {
         file: "dist/index.js",
         format: "cjs",
-        treeshake,
       },
       {
         file: "dist/index.es.js",
         format: "es",
         exports: "named",
-        treeshake,
       },
     ],
     plugins: [
