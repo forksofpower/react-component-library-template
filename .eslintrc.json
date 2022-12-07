@@ -5,14 +5,17 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "extends": [
-    "eslint:recommended", "plugin:@typescript-eslint/recommended"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [
   ],
   "rules": {
+    "prettier/prettier": "error"
   },
   "env": {
     "browser": true,

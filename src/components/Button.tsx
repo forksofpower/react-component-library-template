@@ -1,13 +1,13 @@
 // Third Party
-import React from "react";
+import React from 'react';
 
 // Types
-export type ButtonVariant = "primary" | "danger";
+export type ButtonVariant = 'primary' | 'danger';
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant: ButtonVariant;
-  shape?: "rounded"
+  shape?: 'rounded';
 }
 
 // Button Component
@@ -17,10 +17,11 @@ export const Button: React.FC<ButtonProps> = ({
   shape,
   ...props
 }) => {
-  const classNames = `btn btn-${variant} btn-${shape}`
+  const classNames = `btn btn-${variant} btn-${shape}`;
+
   return (
     <button className={classNames} {...props}>
       {children}
     </button>
-  )
-}
+  );
+};

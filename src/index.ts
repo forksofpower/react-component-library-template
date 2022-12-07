@@ -1,3 +1,3 @@
-import "./scss/global.scss";
+import './scss/global.scss';
 
-export * from "./components/Button";
+export * from './components/Button';
