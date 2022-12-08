@@ -4,7 +4,7 @@
   "author": "Patrick Jones",
   "license": "MIT",
   "scripts": {
-    "rollup": "rollup -c",
+    "build": "rollup -c",
     "test": "jest",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "yarn lint --fix",
