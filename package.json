@@ -76,5 +76,5 @@
       ".(css|less|scss)$": "identity-obj-proxy"
     }
   },
-  "dependencies": {}
+  "packageManager": "yarn@3.3.1"
 }
