@@ -73,6 +73,16 @@
   "types": "dist/index.d.ts",
   "jest": {
     "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "./src/**",
+      "!./src/**/*.stories.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    },
     "moduleNameMapper": {
       ".(css|less|scss)$": "identity-obj-proxy"
     }
