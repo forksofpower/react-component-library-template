@@ -15,28 +15,30 @@ export default [
       {
         file: packageJson.main,
         format: 'cjs',
-        sourcemap: true,
+        sourcemap: true
       },
       {
         file: packageJson.module,
         format: 'esm',
-        sourcemap: true,
-      },
+        sourcemap: true
+      }
     ],
     plugins: [
       peerDepsExternal(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
-      postcss(),
+      postcss({
+        extract: true
+      }),
       terser()
     ],
-    external: ['react-dom'],
+    external: ['react-dom']
   },
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
-    external: [/\.css$/]
-  },
+    external: [/\.(css|less|scss)$/]
+  }
 ];
