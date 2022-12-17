@@ -1,14 +1,6 @@
-# React UI Library Starter
+# React Component Library Template
 
-## Features
-
-- Bundling via Rollup
-- Typescript
-- React
-- SCSS
-- Storybook
-
-# Get Started
+## Get Started
 
 ```shell
 $ yarn storybook
