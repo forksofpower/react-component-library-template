@@ -4,7 +4,8 @@
   "author": "Patrick Jones",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "clean": "rimraf dist/",
+    "build": "yarn clean && rollup -c",
     "test": "jest",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "yarn lint --fix",
@@ -54,6 +55,7 @@
     "prettier": "^2.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^4.1.2",
     "rollup": "^3.12.0",
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
