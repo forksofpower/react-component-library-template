@@ -6,5 +6,12 @@ module.exports = [
     message: 'What type of component is this?',
     choices: ['atom', 'molecule', 'organism'],
     default: 0
+  },
+  {
+    type: 'select',
+    name: 'storyType',
+    message: 'Pick a story language?',
+    choices: ['tsx', 'mdx'],
+    default: 0
   }
 ];
