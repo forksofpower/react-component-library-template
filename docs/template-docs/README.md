@@ -13,7 +13,7 @@ yarn build
 
 ## Generators
 
-Create a new react component called `NavBar` from the built-in Component template.
+Create a new react component named `NavBar` from the built-in Component template.
 
 ```
 $ yarn new:component NavBar
@@ -66,3 +66,11 @@ $ rm -r _templates/*
 **Why not use a tool like `tsdx` or `dts-cli`?**
 
 Zero-config tools are an excellent way to build a modern TypeScript stack quickly and I suggest you use them. This project intends to remove any mystery from the stack itself. Customization is essentially unlimited as this is just a starting place.
+
+# TODO
+
+- [ ] npm deployment
+- [ ] storybook site deployment
+- [ ] add babel to rollup
+- optimizations
+  - [ ]
