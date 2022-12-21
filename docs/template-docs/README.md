@@ -72,5 +72,10 @@ Zero-config tools are an excellent way to build a modern TypeScript stack quickl
 - [ ] npm deployment
 - [ ] storybook site deployment
 - [ ] add babel to rollup
-- optimizations
-  - [ ]
+- [ ] optimizations
+  - [ ] babel-plugin-annotate-pure-calls
+  - [ ] babel-plugin-dev-expressions
+  - [ ] babel-plugin-rename-import
+- [ ] customizations
+  - [ ] tailwind
+  - [ ] emotion
