@@ -2,13 +2,29 @@
 
 ## Get Started
 
-```shell
-$ yarn storybook
+You can [create a new github repo from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) or use [hygen](https://www.hygen.io/).
 
+```shell
+npx hygen init repo forksofpower/react-component-library-template --to my-ui-lib
+```
+
+Below is a list of commands you will probably find useful:
+
+```shell
+# start storybook server
+yarn storybook
+
+# build storybook static website
+yarn build-storybook
+
+# run tests
 yarn test
 
+# build
 yarn build
 
+# generate new react component
+yarn new:component <name>
 ```
 
 ## Generators
@@ -79,3 +95,5 @@ Zero-config tools are an excellent way to build a modern TypeScript stack quickl
 - [ ] customizations
   - [ ] tailwind
   - [ ] emotion
+- [ ] DX
+  - [ ] renovate or dependabot
