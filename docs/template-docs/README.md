@@ -65,16 +65,17 @@ After your code is compiled with TypeScript, it is then processed with a few bab
 ## Customization
 
 **Remove all template docs and utilities**
+This will remove the readme symlink as well.
 
 ```
-$ rm -r docs/template-docs utils README.md
-$ touch README.md
+rm -r docs/template-docs utils README.md
+touch README.md
 ```
 
 **Remove hygen generators**
 
 ```
-$ rm -r _templates/*
+rm -r _templates/*
 ```
 
 ## Why?
@@ -97,3 +98,6 @@ Zero-config tools are an excellent way to build a modern TypeScript stack quickl
   - [ ] emotion
 - [ ] DX
   - [ ] renovate or dependabot
+  - [ ] husky
+  - [ ] lint-staged
+  - [ ] size-limit
