@@ -1,14 +1,16 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
-import postcss from 'rollup-plugin-postcss';
-import terser from '@rollup/plugin-terser';
+/* eslint-disable @typescript-eslint/no-var-requires */
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const resolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const typescript = require('@rollup/plugin-typescript');
+const { default: dts } = require('rollup-plugin-dts');
+const postcss = require('rollup-plugin-postcss');
+const terser = require('@rollup/plugin-terser');
 
-import packageJson from './package.json' assert { type: 'json' };
+const packageJson = require('./package.json');
 
-export default [
+// eslint-disable-next-line no-undef
+module.exports = [
   {
     input: 'src/index.ts',
     output: [
