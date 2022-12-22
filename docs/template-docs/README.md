@@ -78,6 +78,30 @@ touch README.md
 rm -r _templates/*
 ```
 
+## Publish and Deploy
+
+Use [https://www.npmjs.com/package/np](np) to handle publishing to npm.
+
+Running `yarn build-storybook` will generate a static build of your storybook. This can be deployed anywhere where static sites are hosted. Here are a few examples:
+
+**Chromatic**
+
+First, [create a new project on Chromatic](https://www.chromatic.com/start) and copy the project token.
+
+Install Chromatic
+
+```
+yarn add -D chromatic
+```
+
+Publish to Chromatic
+
+```
+npx chromatic --project-token <token>
+```
+
+**Netlify**
+
 ## Why?
 
 **Why not use a tool like `tsdx` or `dts-cli`?**
@@ -86,8 +110,8 @@ Zero-config tools are an excellent way to build a modern TypeScript stack quickl
 
 # TODO
 
-- [ ] npm deployment
-- [ ] storybook site deployment
+- [x] npm deployment
+- [x] storybook site deployment
 - [ ] add babel to rollup
 - [ ] optimizations
   - [ ] babel-plugin-annotate-pure-calls
