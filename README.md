@@ -122,6 +122,6 @@ Zero-config tools are an excellent way to build a modern TypeScript stack quickl
   - [ ] emotion
 - [ ] DX
   - [x] dependabot
-  - [ ] husky
-  - [ ] lint-staged
+  - [x] husky
+  - [x] lint-staged
   - [ ] size-limit
