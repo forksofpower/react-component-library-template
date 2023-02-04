@@ -16,6 +16,8 @@
     "test": "jest",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "yarn lint --fix",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "new:component": "hygen component new --name"
@@ -29,6 +31,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@size-limit/preset-small-lib": "^8.1.2",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
@@ -70,6 +73,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
+    "size-limit": "^8.1.2",
     "style-loader": "^3.3.1",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
@@ -92,6 +96,16 @@
       "npm run lint:fix"
     ]
   },
+  "size-limit": [
+    {
+      "path": "dist/cjs/index.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/esm/index.js",
+      "limit": "10 KB"
+    }
+  ],
   "jest": {
     "testEnvironment": "jsdom",
     "collectCoverage": true,
