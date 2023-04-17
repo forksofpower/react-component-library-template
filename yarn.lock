@@ -14904,7 +14904,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     rimraf: ^4.1.2
-    rollup: ^3.13.0
+    rollup: ^3.20.3
     rollup-plugin-dts: ^5.1.1
     rollup-plugin-peer-deps-external: ^2.2.4
     rollup-plugin-postcss: ^4.0.2
@@ -15608,9 +15608,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.13.0":
-  version: 3.13.0
-  resolution: "rollup@npm:3.13.0"
+"rollup@npm:^3.20.3":
+  version: 3.20.3
+  resolution: "rollup@npm:3.20.3"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -15618,7 +15618,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 9de4d705a016942b6c05111cd95fa5e0b12f079edac5691b8ccbddd55bd9e606e7534d66b5e4867d8f6c69b76a5539a43d448f866295777d23d54581361868d1
+  checksum: 90ab2e099535246bab6ddffb566f3b073073d82006ad5a52bf8687eb50c3b540879aae40693b8ffdc86d9bf6a083badd583677a227954687d5dde60661fe7d11
   languageName: node
   linkType: hard
 
